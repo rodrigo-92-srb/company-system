@@ -1,6 +1,6 @@
 package model.entities;
 
-public class Employee {
+public abstract class Employee {
 	
 	private String name;
 	
@@ -27,8 +27,6 @@ public class Employee {
 		this.payment = payment;
 	}
 	
-	public void calculatePayment(double payment) {
-		this.payment = payment - (payment*0.02);
-	}
+	public abstract double calculatePayment();
 
 }

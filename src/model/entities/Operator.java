@@ -27,5 +27,10 @@ public class Operator extends Employee{
 	public void setHoursWorked(int hoursWorked) {
 		this.hoursWorked = hoursWorked;
 	}
+
+    @Override
+	public double calculatePayment() {  
+		return getPayment() + getHourlyRate()*getHoursWorked();
+	}
     
 }

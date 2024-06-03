@@ -28,4 +28,9 @@ public class Manager extends Employee{
 		this.level = level;
 	}
 
+    @Override
+	public double calculatePayment() {
+		return getPayment() + getPayment()*getLevel()*getKpi()/1000;
+	}
+
 }
