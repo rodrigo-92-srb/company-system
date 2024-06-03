@@ -1,19 +1,15 @@
 package application;
 
-import model.entities.Manager;
-import model.entities.Operator;
+import java.util.Locale;
+
+import application.menus.MainMenu;
 
 public class Company {
 
-	public static void main(String[] args) {
-		
-		Operator operator = new Operator("John Doe", 2000, 168, 18);
-		System.out.println(operator.calculatePayment());
-		System.out.println(operator.getPayment());
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
 
-		Manager manager = new Manager("Jack", 8000, 380, 2);
-		System.out.println(manager.calculatePayment());
-		System.out.println(manager.getPayment());
-	}
-
+        MainMenu mainMenu = new MainMenu();
+        mainMenu.action();
+    }
 }
