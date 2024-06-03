@@ -13,11 +13,6 @@ Application created using Java OOP concepts:
     <p>In the application in question, we have the example of a Employee. A real-world employee has various characteristics, but only the characteristics: name and payment are relevant to the system.</p>
 </div>
 
-<div>
-    <p>A abstração é utlizada para simplificar os objetos de maneira que apenas suas características (atributos) e comportamentos (métodos) que são relevantes ao sistema são representados.</p>
-    <p> Na aplicação em questão temos o exemplo do Computador, um computador do mundo real tem várias características, mas apenas as características: possuir IDE, estar programando e o nome da IDE são relevantes ao sistema. </p>
-</div>
-
 ### Encapsulation
 <div>
      <p>Encapsulation was used in the application so that attributes, for example, cannot be accessed publicly.</p>
