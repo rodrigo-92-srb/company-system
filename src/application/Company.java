@@ -1,15 +1,17 @@
 package application;
 
-import model.entities.Employee;
+import model.entities.Manager;
+import model.entities.Operator;
 
 public class Company {
 
 	public static void main(String[] args) {
 		
-		Employee e1 = new Employee("Jack", 1000.00);
-		
-		System.out.println("Name: "+e1.getName()+" - Payment: "+e1.getPayment());
+		Operator operator = new Operator("Rodrigo", 2000, 168, 18);
+		System.out.println(operator.getPayment());
 
+		Manager manager = new Manager("Jack", 3000, 10, 2);
+		System.out.println(manager.getPayment());
 	}
 
 }
